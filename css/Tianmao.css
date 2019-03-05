@@ -19,7 +19,10 @@ body, button, input, select, textarea {
     font-family: tahoma, arial, 宋体;
 }
 body{
-	
+	background: url(../img/background.png);
+	background-repeat: no-repeat;
+	background-position: top;
+	z-index: 999;
 }
 em, i {
     font-style: normal;
@@ -264,10 +267,9 @@ li, ol, ul {
 /* 头部结束 */
 /* 内容开始 */
 .content{
-    background: #fff;
-    color: #999;
+    /* background: #F5F5F5; */
     font-size: 12px;
-	
+	font-family: "Microsoft YaHei",SimSun,'\5b8b\4f53',sans-serif;
 }
 .main-nav{
 	width: 100%;
@@ -293,7 +295,7 @@ li, ol, ul {
     border-color: #FF0036;
     height: 34.5px;
 	clear: both;
-	margin-left: 200px;
+	margin-left: 215px;
     width: 1030px;
 }
 .main-nav a{
@@ -319,26 +321,30 @@ li, ol, ul {
     display: block;
 }
 .j_category{
-	position: relative;
     height: 500px;
     width: 100%;
 }
 .category-inner-con{
 	width: 1230px;
-    padding-right: 30px;
     position: relative;
     height: 0;
     z-index: 100;
     margin: 0 auto;
 }
 .logo-con{
-	height: 130px;
+	height: 120px;
     width: 290px;
     position: absolute;
-    z-index: 100000;
-    margin-top: -167px;
+    margin-top: -156px;
     margin-left: -45px;
+	background-color: rgba(0, 0, 0, 0);
 }
+.logo-con img{
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0);
+}
+	
 .category-tab-nav{
 	position: absolute;
     z-index: 100;
@@ -362,34 +368,387 @@ li, ol, ul {
 	color: #ffe013;
 	background-color: #C60A0A;
 }
+.pannel-normal{
+	position: relative;
+}
 .normal-nav{
 	background-color: rgba(0,0,0,.55);
     width: 200px;
     height: 500px;
     position: relative;
-    z-index: 11;
 }
 .nav-item{
 	position: relative;
     height: 31.2px;
     line-height: 31.2px;
-    color: #fff;
-    font-size: 14px;
+	color: #FFFFFF;
 }
-.nav-item{
+.nav-item i{
 	display: inline-block;
     opacity: .5;
-	margin-left: 14px;
+	margin-left: 12px;
     margin-right: 4px;
     height: 31px;
     line-height: 31px;
-    font-size: 16px;
+    font-size: 12px;
+	font-weight: 600;
 }
 .nav-item a{
-	height: 31px;
+	height: 21px;
     color: #fff;
     font-size: 14px;
+	
 }
+.nav-item:hover{
+	font-weight: 800;
+	background: #FFFFFF;
+}
+.l1:hover{
+	color: #e54077;
+}
+.l1:hover a{
+	color: #e54077;
+}
+.l2:hover{
+	color: #427def;
+}
+.l2:hover a{
+ 	color: #427def;
+}
+.l3:hover{
+	color: #fa5c5c;
+}
+.l3:hover a{
+ 	color: #fa5c5c;
+}
+.l4:hover{
+	color: #f7a831
+}
+.l4:hover a{
+	color: #f7a831
+}
+.l5:hover{
+	color: #3bc7b0
+}
+.l5:hover a{
+	color: #3bc7b0
+}
+.slider{
+	width: 1230px;
+	height: 500px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: #FC0039;
+}
+.slider-content{
+    width: 100%;
+    height: 500px;
+	background: url(//img.alicdn.com/imgextra/i3/129/O1CN01rxR7Lq1Cp7arzfDio_!!129-0-luban.jpg_q100.jpg_.webp) no-repeat center center;
+}
+.slider-content:hover{
+	cursor: pointer;
+}
+.slider-top{
+    position: absolute;
+	margin-top: 10px;
+    right: 0;
+    width: 220px;
+    height: 235px;
+    background-color: rgba(255,255,255,.7);
+    transition: background-color .4s;
+}
+.slider-top img{
+	width: 100%;
+	height: 100%;
+}
+.t{ 
+	bottom: 10px;
+}
+.slider-top:hover{
+	background: #FFFFFF;
+}
+.slider-nav{
+    text-align: center;
+	position: absolute;
+	bottom: 20px;
+	left: 0;
+	right: 0;
+}
+.id{
+    background: #000;
+    width: 25px;
+    height: 5px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 5px;
+    cursor: pointer;
+    opacity: .3;
+}
+.d{
+	background: #fff;
+	opacity: .6;
+}
+.id:hover{
+	background: #fff;
+	opacity: .6;
+}
+/* 38女王节开始 */
+.page-list{
+	width: 1230px;
+    height: 435px;
+	margin: 0 auto;
+
+}
+.list-top{
+	background: url(//img.alicdn.com/tfs/TB1coAFJAvoK1RjSZFwXXciCFXa-600-130.png) center no-repeat;
+    background-size: 300px 65px;
+    height: 105px;
+	display: block;
+}
+.group-wrapper{
+	position: relative;
+    float: left;
+    width: 610px;
+    height: 330px;
+    margin-right: 10px;
+}
+.wr{
+	margin-right: 0;
+}
+.first-page{
+	color: #ff0e3c;
+    background-image: url(//img.alicdn.com/tfs/TB1B7IzJpzqK1RjSZFCXXbbxVXa-250-330.png);
+	box-shadow: -5px 5px 10px rgba(0,0,0,.2);
+	position: absolute;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 330px;
+    margin: 0;
+	cursor: pointer;
+}
+.pa{
+	color: #ff520c;
+    background-image: url(//img.alicdn.com/tfs/TB1n7otJCzqK1RjSZPxXXc4tVXa-250-330.png);
+}
+.page-name{
+	display: block;
+	padding-top: 32px;
+	text-align: center;
+	font-size: 24px;
+    font-weight: 700;
+}
+.page-benefit{
+	text-align: center;
+	font-size: 18px;
+}
+.item-pic{
+	position: relative;
+    margin: 20px auto 0;
+    width: 180px;
+    height: 180px;
+    display: block;
+}
+.item-pic img{
+	width: 100%;
+	height: 100%;
+}
+.page-item{
+	color: #8300ff;
+    background-image: url(//img.alicdn.com/tfs/TB1SMZUJxnaK1RjSZFBXXcW7VXa-350-160.png);
+	box-shadow: 0 5px 10px rgba(0,0,0,.2);
+	position: relative;
+    display: block;
+    color: #2A2F3B;
+    width: 350px;
+    height: 160px;
+    margin: 0 0 10px 260px;
+    border-radius: 4px;
+	cursor: pointer;
+}
+.it{
+	color: #009d66;
+    background-image: url(//img.alicdn.com/tfs/TB1iWoqJCrqK1RjSZK9XXXyypXa-350-160.png);
+}
+.itt{
+	color: #005aff;
+    background-image: url(//img.alicdn.com/tfs/TB1t7otJCzqK1RjSZPxXXc4tVXa-350-160.png);
+}
+.its{
+	color: #ff6684;
+    background-image: url(//img.alicdn.com/tfs/TB1hXsAJCzqK1RjSZFpXXakSXXa-350-160.png);
+}
+.page-name1{
+	color: #8300ff;
+	display: block;
+    margin-left: 30px;
+    padding-top: 27px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.page-benefits{
+	display: block;
+    margin-left: 30px;
+    font-size: 18px;
+}
+.page-benefits span{
+	color: #8300ff;
+}
+.item-pics{
+	width: 130px;
+    height: 130px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    margin: 0;
+}
+/* 38女王节结束 */
+/* 闪购开始 */
+.shan-box{
+	margin: 0 auto;
+    padding-top: 24px;
+    width: 1230px;
+	height: 372px;
+}
+.shan-item{
+	width: 234px;
+	float: left;
+    height: 370px;
+    margin-right: 13px;
+    background-color: #fff;
+}
+.ia{
+	width: 485px;
+}
+.ib{
+	width: 485px;
+	margin-right: 0;
+}
+.head{
+	height: 54px;
+    background: #fff;
+    border-style: solid;
+    border-width: 0 0 1px;
+    border-color: #eee;
+    position: relative;
+}
+.head .cn{
+	display: inline-block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #333;
+    line-height: 54px;
+    height: 18px;
+    margin-left: 10px;
+}
+.head .en{
+	display: inline-block;
+    font-size: 14px;
+    font-weight: 700;
+    color: #333;
+    margin-left: 10px;
+    line-height: 24px;
+    height: 40px;
+}
+.body{
+	display: block;
+	height: 316px;
+	transition: .1s linear;
+}
+.body:hover{
+	opacity: 0.7;
+}
+.body img{
+	width: 100%;
+	height: 100%;
+}
+.more{
+	position: absolute;
+    right: 14px;
+    top: 0;
+    width: 42px;
+    height: 54px;
+    line-height: 54px;
+    z-index: 99;
+    background-size: 18px 18px;
+    background-image: url(//img.alicdn.com/tfs/TB1B7RoaMMPMeJjy1XcXXXpppXa-36-36.png);
+    background-repeat: no-repeat;
+    background-position: right center;
+    padding-right: 14px;
+    font-size: 16px;
+    color: #666;
+    overflow: hidden;
+}
+/* 闪购结束 */
+/* logo开始 */
+.logo{
+	margin: 15px auto 0;
+    width: 1230px;
+    position: relative;
+}
+.logo-in{
+	height: 327px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #fff;
+}
+.logo-list{
+	margin-right: -2px;
+    overflow: hidden;
+}
+.logo-item{
+	width: 122px;
+    height: 108px;
+    margin-right: 1px;
+    margin-bottom: 1px;
+    float: left;
+    position: relative;
+	
+}
+.brand{
+	margin: 0 auto;
+    display: block;
+    text-align: center;
+    line-height: 108px;
+    background-color: #fff;
+
+}
+.brand img{
+	width: 82%;
+    height: 50px;
+	vertical-align: middle;
+}
+.brand i{
+	width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -20px;
+    margin-top: -30px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 20px;
+	color: #999;
+}
+.brand span{
+	display: block;
+    font-size: 14px;
+    line-height: 136px;
+    text-align: center;
+}
+/* logo结束 */
+
+
+
+
+
+
+
+
+
+
 /* 内容结束 */
 
-	
