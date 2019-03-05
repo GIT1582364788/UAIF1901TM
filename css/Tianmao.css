@@ -1,0 +1,395 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+body, button, input, select, textarea {
+    font: 12px/1.5 tahoma,arial;
+    font-style: normal;
+    font-variant-ligatures: normal;
+    font-variant-caps: normal;
+    font-variant-numeric: normal;
+    font-weight: normal;
+    font-stretch: normal;
+    font-size: 12px;
+    line-height: 1.5;
+    font-family: tahoma, arial, 宋体;
+}
+body{
+	
+}
+em, i {
+    font-style: normal;
+	font-family: tahoma, arial, 宋体;
+}
+li, ol, ul {
+    list-style: none;
+}
+/* 导航栏开始 */
+.top-con{
+	width: 100%;
+	position: relative;
+    display: block;
+    height: 80px;
+}
+.top-con:hover{
+	cursor: pointer;
+}
+.top-left{
+	background: #8a3669;
+    width: 50%;
+    position: absolute;
+    left: 0;
+    height: 100%;
+}   
+.top-right{
+	background: #8a3669;
+    width: 50%;
+    position: absolute;
+    right: 0;
+    height: 100%;
+} 
+.top-con img{
+	position: relative;
+    top: 0;
+    margin: 0 auto;
+    z-index: 10;
+	display: block;
+	width: 990px;
+    height: 80px;
+}
+.back{
+	margin: 0 auto;
+}
+.site-nav{
+    border-bottom-color: transparent;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
+	height: 40px;
+	background-color: #550283;
+	background-position: left;	
+}
+.sn-bd{
+	position: relative;
+    left: -15px;
+	width: 1230px;
+	margin: auto;
+}
+.sn-container{
+	color: #fff;
+	height: 32px;
+	width: 100%;
+	position: relative;
+}
+.sn-login-info{
+    height: 32px;
+    line-height: 32px;
+	display: inline-block;
+    position: relative;
+}
+.sn-login{
+    padding-left: 20px;
+	padding-right: 10px;
+	box-sizing: border-box;
+	color: #fff;
+}
+.sn-login:hover{
+	cursor: pointer;
+}
+.sn-register{
+    color: #fff;
+    padding: 0 10px;
+}
+.sn-register:hover{
+	cursor: pointer;
+}
+.sn-quick-menu{
+    height: 32px;
+    line-height: 32px;
+	position: absolute;
+    right: 0;
+    top: 0;
+}
+.sn-mytaobao{
+	float: left;
+    position: relative;
+}
+.wang:hover i{
+	color: #FF0036;
+	cursor: pointer;
+}
+.wang:hover .menu-hd{
+	text-decoration: underline;
+	color: #FF0036;
+}
+.menu-hd{
+	padding-right: 14px;
+	color: #fff;
+}
+.menu-hd:hover{
+	text-decoration: underline;
+	color: #FF0036;
+}
+.menu-hd b{
+    position: absolute;
+    right: 6px;
+    top: 15px;
+    width: 0;
+    height: 0;
+    border-width: 3px;
+    border-style: solid dashed dashed;
+    border-color: #bbb transparent transparent;
+    font-size: 0;
+    line-height: 0;
+}
+.sn-cart{
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+	padding: 0 10px;
+	float: left;
+}
+.sn-cart:hover{
+	color: #ffe013;
+}
+.sn-cart:hover .sn-cart-link{
+	color: #ffe013;
+}
+.sn-cart-link:hover span{
+	color: #ffe013;
+}
+.sn-cart i{
+	position: relative;
+	font-size: 12px;
+}
+.sn-cart-link{
+	position: static;
+	height: 40px ;
+	color: #FFFFFF;
+}
+.sn-cart-link span{
+	color: #FFFFFF;
+    padding: 0 2px;
+    font-weight: 700;
+    font-family: Arial;
+}
+.sn-separator{
+	top: 9px;
+	display: inline-block;
+    width: 0;
+    height: 16px;
+    line-height: 14px;
+    vertical-align: top;
+    position: relative;
+    left: 0;
+    font-size: 0;
+    border-left: 1px solid #ccc;
+    margin: 0 2px 0 5px;	
+	float: left;
+}
+
+.font{
+	font-weight: 800;
+	color: #FFFFFF;
+	position: absolute;
+	top: 3px;
+	margin-right: 16px;
+}
+/* 导航栏结束 */
+/* 头部开始 */
+.header{
+	height: 130px;
+}
+.headerLayout{
+	width: 1230px;
+	margin: 0 auto;
+}
+.mall-search{
+	width: 625px;
+    padding-top: 38px;
+	margin: 0 auto;
+}
+.s-combobox-input-wrap{
+	height: 36px;
+	position: relative;
+}
+.s-combobox-input-wrap input{
+	height: 38px;
+    width: 491px;
+    font: 14px arial;
+    box-sizing: border-box;
+	padding: 5px 3px 5px 5px;
+    outline: 0;
+    background-color: rgba(0, 0, 0, 0) ;
+	float: left;
+	border: 2px solid #FFFFFF;
+}
+.s-combobox-input-wrap ::-webkit-input-placeholder {
+	color: #FFFFFF;
+}
+.s-combobox-input-wrap button{
+	width: 132px;
+    height: 38px;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 5px;
+	background-color: #fff ;
+    color: #FF0036;
+	cursor: pointer;
+	border: none;
+}
+.hot{
+	width: 625px;
+	height: 24px;
+	padding-top: 4px;
+	margin: 0 auto;
+	font-size: 14px;
+	color: #fff;
+	display: flex;
+}
+.hot-line{
+	padding: 0 11px;
+}
+.hot-item1{
+	color: #ffe013;
+}
+.hot-item1:hover{
+	cursor: pointer;
+}
+.hot-item:hover{
+	cursor: pointer;
+}
+/* 头部结束 */
+/* 内容开始 */
+.content{
+    background: #fff;
+    color: #999;
+    font-size: 12px;
+	
+}
+.main-nav{
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0);
+    border-width: 0px;
+	white-space: nowrap;
+    position: relative;
+    font-size: 0;
+    padding-top: 0;
+    height: 35.5px;
+    border-style: solid;
+    border-color: #FF0036;
+}
+.inner-con1{
+	width: 1230px;
+    margin: 0 auto;
+    padding-right: 30px;
+}
+.inner-con2{
+	background-color: white;
+    border-style: solid;
+    border-width: 0px 0px 1.5px;
+    border-color: #FF0036;
+    height: 34.5px;
+	clear: both;
+	margin-left: 200px;
+    width: 1030px;
+}
+.main-nav a{
+	height: 35px;
+    cursor: pointer;
+    float: left;
+    padding: 0 8px;
+    font-weight: 500;
+    font-size: 16px;
+    display: block;
+    color: #333;
+    letter-spacing: normal;
+    position: relative;
+	line-height: 35px;
+}
+.main-nav a:hover{
+	color: #FF0036;
+}
+.main-nav a img{
+	width: 100px;
+    height: 30px;
+    margin-top: 3px;
+    display: block;
+}
+.j_category{
+	position: relative;
+    height: 500px;
+    width: 100%;
+}
+.category-inner-con{
+	width: 1230px;
+    padding-right: 30px;
+    position: relative;
+    height: 0;
+    z-index: 100;
+    margin: 0 auto;
+}
+.logo-con{
+	height: 130px;
+    width: 290px;
+    position: absolute;
+    z-index: 100000;
+    margin-top: -167px;
+    margin-left: -45px;
+}
+.category-tab-nav{
+	position: absolute;
+    z-index: 100;
+    margin-top: -36px;
+    height: 36px;
+    width: 200px;
+    color: #fff;
+    line-height: 36px;
+}
+.category-tab-nav-item{
+	color: #DD2727;
+	float: left;
+    width: 100px;
+    text-align: center;
+    font-size: 14px;
+	font-weight: 800;
+    cursor: pointer;
+	background-color: rgba(238,238,238,.95);
+}
+.item{
+	color: #ffe013;
+	background-color: #C60A0A;
+}
+.normal-nav{
+	background-color: rgba(0,0,0,.55);
+    width: 200px;
+    height: 500px;
+    position: relative;
+    z-index: 11;
+}
+.nav-item{
+	position: relative;
+    height: 31.2px;
+    line-height: 31.2px;
+    color: #fff;
+    font-size: 14px;
+}
+.nav-item{
+	display: inline-block;
+    opacity: .5;
+	margin-left: 14px;
+    margin-right: 4px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 16px;
+}
+.nav-item a{
+	height: 31px;
+    color: #fff;
+    font-size: 14px;
+}
+/* 内容结束 */
+
+	
