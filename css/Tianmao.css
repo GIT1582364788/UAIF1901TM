@@ -19,10 +19,10 @@ body, button, input, select, textarea {
     font-family: tahoma, arial, 宋体;
 }
 body{
-	background: url(../img/background.png);
+	background: #f5f5f5 url(../img/background.png);
 	background-repeat: no-repeat;
 	background-position: top;
-	z-index: 999;
+
 }
 em, i {
     font-style: normal;
@@ -691,7 +691,6 @@ li, ol, ul {
 	height: 327px;
     width: 100%;
     overflow: hidden;
-    background-color: #fff;
 }
 .logo-list{
 	margin-right: -2px;
@@ -703,8 +702,10 @@ li, ol, ul {
     margin-right: 1px;
     margin-bottom: 1px;
     float: left;
-    position: relative;
-	
+    position: relative;	
+}
+.logo-item:hover .brand-mask{
+	opacity: 1;
 }
 .brand{
 	margin: 0 auto;
@@ -712,7 +713,13 @@ li, ol, ul {
     text-align: center;
     line-height: 108px;
     background-color: #fff;
-
+}
+.and:hover{
+	color: #FFFFFF;
+	background: #FF0036;
+}
+.and:hover .icon-huanyipi{
+	color: #FFFFFF;
 }
 .brand img{
 	width: 82%;
@@ -739,16 +746,396 @@ li, ol, ul {
     line-height: 136px;
     text-align: center;
 }
+.brand-mask{
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #333;
+    background-color: rgba(0,0,0,.8);
+    transition: all .3s ease-out;
+    opacity: 0;
+}
+.coupon{
+	color: #fff;
+    text-align: center;
+    line-height: 90px;
+    height: 60px;
+}
+.coupon span{
+	display: block;
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.enter{
+	text-align: center;
+    height: 32px;
+}
+.enter span{
+	display: inline-block;
+    color: #fff;
+    width: 63px;
+    height: 18px;
+    font-size: 12px;
+    line-height: 15px;
+    background-color: #FF0036;
+    border-radius: 9px;
+}
 /* logo结束 */
-
-
-
-
-
-
-
-
-
-
 /* 内容结束 */
+/* 详情开始 */
+.detail{
+	margin: 20px auto 0;
+    width: 1230px;
+}
+.detail-one{
+	margin-top: 20px;
+    width: 100%;
+    height: 665px;
+    position: relative;
+}
+.one-title{
+	display: inline-block;
+    vertical-align: middle;
+    font-size: 18px;
+    color: #000;
+    height: 28px;
+}
+.one-title img{
+	vertical-align: middle;
+    width: 214px;
+    height: 25px;
+}
+.one-body{
+	width: 100%;
+    height: 618px;
+    margin-top: 10px;
+    overflow: hidden;
+	background: url(//img.alicdn.com/tps/TB1FEsePXXXXXcqXXXXXXXXXXXX-80-80.gif) 50% 50% no-repeat;
+}
+.hots{
+	position: absolute;
+    top: 0;
+    right: 0;
+    width: 800px;
+    text-align: right;
+}
+.hots-word{
+	display: inline-block;
+    height: 20px;
+    line-height: 20px;
+    margin: 5px 10px;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #f5f5f5;
+	color: #000000;
+}
+.hots-word:hover{
+	border-bottom: 1px solid #000;
+}
+.one-left{
+	float: left;
+    position: relative;
+    width: 235px;
+    height: 618px;
+}
+.le{
+	display: block;
+    width: 100%;
+    height: 618px;
+    transition: opacity .3s ease-out;
+}
+.le:hover{
+	opacity: 0.7;
+}
+.les{
+	width: 100%;
+	width: 100%;
+}
+.banner-detail{
+	position: absolute;
+    vertical-align: middle;
+    bottom: 20%;
+    width: 218px;
+    height: 64px;
+}
+.left-title-wrap{
+	background: rgba(0,0,0,.9);
+    width: 70px;
+    height: 64px;
+    overflow: hidden;
+    color: #FFF;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+}
+.left-title{
+	display: inline-block;
+    vertical-align: middle;
+    line-height: 24px;
+    font-size: 18px;
+    width: 36px;
+    overflow: hidden;
+}
+.right-title-wrap{
+	left: 70px;
+    top: 0;
+    position: absolute;
+    background: rgba(0,0,0,.6);
+    overflow: hidden;
+    width: 128px;
+    height: 64px;
+    color: #FFF;
+    vertical-align: middle;
+}
+.right-title-absolute{
+	margin-top: 8px;
+    margin-left: 14px;
+}
+.right-title{
+	display: block;
+    line-height: 24px;
+    font-size: 18px;
+}
+.detail-wrap{
+	background-image: linear-gradient(-180deg,rgba(0,0,0,0) 4%,rgba(0,0,0,.36) 100%);
+    width: 100%;
+    height: 60px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.wraps{
+	position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 32px;
+    height: 32px;
+	display: block;
+}
+.one-right{
+	width: 995px;
+    height: 618px;
+    float: left;
+    overflow: hidden;
+}
+.grid{
+	float: left;
+    display: block;
+    border-bottom: 14px solid #f5f5f5;
+    position: relative;
+    background-color: #fff;
+	width: 484px;
+    height: 301px;
+    margin-left: 13px;
+}
+.grid-in{
+	width: 462px;
+    height: 282px;
+    margin: 10px;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.09);
+}
+.grid-list{
+	overflow: hidden;
+    background: #F1F1F1;
+}
+.grid-item{
+	color: #FFF;
+    background: #00B262;
+	float: left;
+    height: 57px;
+    width: 191px;
+    cursor: pointer;
+    line-height: 30px;
+    padding: 0 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+.ites{
+	background: #F1F1F1;
+    float: left;
+    color: #000;
+    height: 57px;
+    width: 191px;
+    cursor: pointer;
+    line-height: 30px;
+    padding: 0 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+.tab-title{
+	margin-top: 16px;
+    font-size: 18px;
+    line-height: 20px;
+}
+.content-in{
+	height: 225px;
+    width: 462px;
+	z-index: 99;
+}
+.content-in:hover img{
+	opacity: 0.7;
+}
+.content-in-a{
+	height: 225px;
+    width: 462px;
+	cursor: pointer;
+}
+.right-detail{
+	position: absolute;
+    top: 153px;
+    height: 87px;
+    width: 291px;
+    background-repeat: no-repeat;
+    background-position: 0 center;
+    background-color: rgba(0,0,0,0);
+    background-image: url(https://img.alicdn.com/tfs/TB1AnTXewMPMeJjy1XcXXXpppXa-290-87.png);
+}
+.title-wrap{
+	margin-left: 26px;
+    margin-top: 8px;
+    vertical-align: middle;
+}
+.cla-icon{
+	width: 23px;
+    height: 23px;
+    margin-top: -10px;
+}
+.tab-item-title{
+	margin-left: 8px;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+	color: #00B262;
+}
+.tab-desp{
+	margin-left: 26px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.item-img{
+	float: right;
+    margin-top: 10px;
+    margin-right: 30px;
+    width: 200px;
+    height: 200px;
+	z-index: 1;
+}
+.one-grid-price{
+	width: 233px;
+    height: 301px;
+    margin-left: 13px;
+    text-align: center;
+	float: left;
+    display: block;
+    border-bottom: 15px solid #f5f5f5;
+    position: relative;
+    background-color: #fff;
+	overflow: hidden;
+	border: 1px solid #fff;
+	cursor: pointer;
+	margin-bottom: 13px;
+}
+.ce{
+	text-align: left;
+}
+.price-one{
+	width: 234px;
+    height: 300px; 
+}
+.one-grid-price:hover .kong-img{
+	opacity: 0.7;
+}
+.one-grid-price:hover {
+	border: 1px solid #FF0036;
+}
+.kong{
+	width: 68px;
+    height: 20px;
+    color: #fff;
+    line-height: 20px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+.kong-img{
+	width: 185px;
+    height: 185px;
+	transition: right .3s;
+}
+
+.kong-title{
+	width: 135px;
+    height: 40px;
+    font-size: 14px;
+    color: #333;
+    line-height: 20px;
+    overflow: hidden;
+    margin: 8px auto;
+}
+.kong-price{
+	font-size: 16px;
+    color: #FF0036;
+    line-height: 18px;
+    margin: 10px auto;
+}
+
+.full-grid{
+	width: 235px;
+    height: 301px;
+    float: left;
+    display: block;
+    border-bottom: 15px solid #f5f5f5;
+    position: relative;
+    background-color: #fff;
+}
+.titles{
+	position: absolute;
+    top: 20px;
+    left: 25px;
+    width: 220px;
+    font-size: 18px;
+    z-index: 10;
+    line-height: 24px;
+    height: 24px;
+	font-weight: 550;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+	color: #000;
+}
+.sub-title{
+	position: absolute;
+    top: 49px;
+    left: 25px;
+    width: 220px;
+    font-size: 14px;
+    z-index: 10;
+    line-height: 18px;
+    height: 18px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+	color: #7A45E5;
+}
+.ff{
+	width: 170px;
+    height: 170px;
+    margin: 90px 33px 42px 32px;
+}
+
+.full-banner {
+    height: 90px;
+    overflow: hidden;
+    display: block;
+    margin: 10px auto 0;
+    position: relative;
+}
+.full-banne img{
+	width: 100%;
+	height: 100%;
+}
+/* 详情结束 */
 
