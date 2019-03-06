@@ -918,18 +918,19 @@ li, ol, ul {
 }
 .one-right{
 	width: 995px;
-    height: 618px;
+    height: 619px;
     float: left;
     overflow: hidden;
+	
 }
 .grid{
 	float: left;
     display: block;
-    border-bottom: 14px solid #f5f5f5;
+    border-bottom: 13px solid #f5f5f5;
     position: relative;
     background-color: #fff;
 	width: 484px;
-    height: 301px;
+    height: 302px;
     margin-left: 13px;
 }
 .grid-in{
@@ -1026,7 +1027,7 @@ li, ol, ul {
 }
 .one-grid-price{
 	width: 233px;
-    height: 301px;
+    height: 300px;
     margin-left: 13px;
     text-align: center;
 	float: left;
