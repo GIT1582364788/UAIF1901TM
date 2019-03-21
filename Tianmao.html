@@ -1,107 +1,156 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1.0,user-scaleble=0"> 
-		<title>天猫官网</title>
-		<link rel="stylesheet" href="css/Tianmao.css">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="https://at.alicdn.com/t/font_1069603_6zczjorc9t6.css">
+		<link rel="stylesheet" href="css/tianmao.css">
+		<script src="js/tianmao.js"></script>
+		<script src="js/animate.js"></script>
+		<title>天猫官网</title>
 	</head>
-	<style>
-	/* .banner-con:before{
-		background:url() right center no-repeat;
-	}
-	.banner-con:after{
-		background:url() left center no-repeat;
-	}
-	.activity-bg{
-		background-image:url();
-	} */
-
-	</style>
 	<body>
-		<!-- 导航栏开始 -->
-		<div class="top-con">
-			<div class="top-left"></div>
-			<div class="top-right"></div>
-			<img src="img/t1.png" alt="">
-		</div>
-		<div class="site-nav">
-			<div class="sn-bd">
-				<div class="sn-container">
-					<p class="sn-login-info">
-						<em>喵，欢迎来天猫</em>
-						<a href="" class="sn-login">请登录</a>
-						<a href="" class="sn-register">免费注册</a>
-					</p>
-					<ul class="sn-quick-menu">
-						<li class="sn-mytaobao">
-							<a href="" class="menu-hd">我的淘宝<b></b></a>
-						</li>
-						<li class="sn-cart">
-							<i class="iconfont icon-gouwuche1-copy"></i>
-							<a href="" class="sn-cart-link">购物车<span>0</span>件</a>
-						</li>
-						<li class="sn-mytaobao">
-							<a href="" class="menu-hd">收藏夹<b></b></a>
-						</li>
-						<li class="sn-separator"></li>
-						<li class="sn-cart">
-							<i class="iconfont icon-shouji"></i>
-							<a href="" class="sn-cart-link">手机版</a>
-						</li>
-						<li class="sn-cart">
-							<a href="" class="sn-cart-link">淘宝网</a>
-						</li>
-						<li class="sn-mytaobao">
-							<a href="" class="menu-hd">商家支持<b></b></a>
-						</li>
-						<li class="sn-mytaobao wang">
-							<i class="iconfont icon-wangzhandaohang"></i>
-							<a href="" class="menu-hd">网站导航<b></b></a>
-						</li>
-					</ul>
+		<!-- 顶部开始 -->
+		<div class="total">
+				<div class="total-container">
+					<img src="img/tt.png" alt="">
 				</div>
 			</div>
-		
+			<!-- 顶部结束 -->
+		<!-- 顶部导航栏开始 -->
+		<div class="nav-box">
+			<div class="nav-bd">
+				<p class="sn-login-info">
+					<em>喵，欢迎来天猫</em>
+					<a class="sn-login" href="">请登录</a>
+					<a class="sn-register" href="">免费注册</a>
+				</p>
+				<ul class="sn-quick-menu">
+					<li class="mytaobao">
+						<div class="sn-menu">
+							<a class="menu-hd" href="">
+								我的淘宝
+								<b></b>
+							</a>
+						</div>
+						<div class="menu-bd">
+							<a href="">已买到的宝贝</a>
+							<a href="">已卖出的宝贝</a>
+						</div>
+					</li>
+					<li class="sn-cart">
+						<i class="iconfont icon-gouwuche1-copy"></i>
+						<a class="sn-cart-link" href="">
+							购物车
+							<span class="count">0</span>
+							件
+						</a>
+					</li>
+					<li class="mytaobao">
+						<div class="sn-menu">
+							<a class="menu-hd" href="">
+								收藏夹
+								<b></b>
+							</a>
+							<div class="menu-bd">
+								<a href="">收藏的宝贝</a>
+								<a href="">收藏的店铺</a>
+							</div>
+						</div>
+					</li>
+					<li class="sn-separator"></li>
+					<li class="sn-cart">
+						<i class="iconfont icon-shouji1"></i>
+						<a class="sn-cart-link" href="">
+							手机版
+						</a>
+					</li>
+					<li class="sn-cart">
+						<a class="sn-cart-link" href="">
+							淘宝网
+						</a>
+					</li>
+					<li class="mytaobao">
+						<div class="sn-menu cc">
+							<a class="menu-hd" href="">
+								商家支持
+								<b></b>							
+							</a>
+							<div class="menu-bdc">
+									<a href="">商家：</a>
+									<a href="">商家中心</a>
+									<a href="">天猫规则</a>
+									<a href="">商家入驻</a>
+									<a href="">运营服务</a>
+									<a href="">商家品控</a>
+									<a href="">商家工具</a>
+									<a href="">天猫智库</a>
+									<a href="">喵言喵语</a>
+								</div>
+						</div>
+					</li>
+					<li class="sn-sitemap">
+						<div class="sn-menu">
+							<h3 class="menu-hd ccc">
+								<i class="iconfont icon-daohang"></i>
+								<span>网站导航</span>
+								<b></b>
+							</h3>
+						</div>
+					</li>
+				</ul>
+			</div>
 		</div>
-		<!-- 导航栏结束 -->
-		<!-- 头部开始 -->
+		<!-- 顶部导航栏结束 -->
+		
+		<!-- 搜索栏开始 -->
 		<div class="header">
 			<div class="headerLayout">
-				<div class="headerCon">
-					<div class="mall-search">
-						<div class="s-combobox-input-wrap">
-							<input type="text" class="search-input" style="outline: none;" placeholder="请输入关键字">
-							<button type="submit" data-spm-anchor-id="875.7931836/B.a2226n0.i2.7f8c4265PphWN0">搜索<s></s></button>
-						</div>
-						<ul class="hot">
-							<li class="hot-item">针织衫</li>
-							<li class="hot-line">|</li>
-							<li class="hot-item1">连衣裙</li>
-							<li class="hot-line">|</li>
-							<li class="hot-item">四件套</li>
-							<li class="hot-line">|</li>
-							<li class="hot-item1">摄像头</li>
-							<li class="hot-line">|</li>
-							<li class="hot-item">客厅灯</li>
-							<li class="hot-line">|</li>
-							<li class="hot-item">口红</li>
-							<li class="hot-line">|</li>
-							<li class="hot-item1">手机</li>
-							<li class="hot-line">|</li>
-							<li class="hot-item">运动鞋</li>
-							<li class="hot-line">|</li>
-							<li class="hot-item1">牛奶</li>
-						</ul>
+				<div class="mall-search">
+					<div class="search-box">
+						<input type="text" class="search-input" style="outline:none;"placeholder="">
+						<label for="mq" class="s-combobox-placeholder"style="visibility:visible;">搜索 天猫 商品/品牌/店铺</label>
+						<button type="submit">
+							搜索
+						</button>
 					</div>
 				</div>
+				<ul class="hot-query">
+					<li>
+						<a href="">针织衫</a>
+					</li>
+					<li class="hot-query-highlight">
+						<a href="">连衣裙</a>
+					</li>
+					<li>
+						<a href="">四件套</a>
+					</li>
+					<li class="hot-query-highlight">
+						<a href="">摄像头</a>
+					</li>
+					<li>
+						<a href="">客厅灯</a>
+					</li>
+					<li>
+						<a href="">口红</a>
+					</li>
+					<li class="hot-query-highlight">
+						<a href="">手机</a>
+					</li>
+					<li>
+						<a href="">运动鞋</a>
+					</li>
+					<li class="hot-query-highlight">
+						<a href="">牛奶</a>
+					</li>
+				</ul>
 			</div>
-		</div>
-		<!-- 头部结束 -->
-		<!-- 内容开始 -->
-		<div class="content">
-			<div class="main-nav">
+		</div>	
+		<!-- 搜索栏结束 -->
+		
+		<!-- 轮播图开始 -->
+		<div class="main-nav">
+			<div class="inner-con0">
 				<div class="inner-con1">
 					<div class="inner-con2">
 						<a href="">
@@ -121,132 +170,181 @@
 					</div>
 				</div>
 			</div>
-			
-			<div class="j_category">
-				<div class="category-inner-con">
-					<div class="logo-con">
-						<img src="img/TB.gif" alt="">
-					</div>
-					<ul class="category-tab-nav">
-						<li class="category-tab-nav-item">商品分类</li>
-						<li class="category-tab-nav-item item">女王节</li>
-					</ul>
-					<div class="category-tab-content">
-						<div class="pannel-normal">
-							<div class="slider">
-								<div class="slider-content">
-									<!-- <img src="img/t133.png" alt=""> -->
-									<div class="slider-top">
+		</div>
+		<div class="category-con">				
+			<div class="wheel-box">
+				<div class="wheel">
+					<div class="banner-imgs">						  			
+						<div class="imgBox">							
+							<a href="" class="active" >
+								<img src="img/t133.png" alt="">
+								<div class="wheel-img">
+									<img src="img/t4.png" alt="">
+									<img src="img/t5.png" alt="">
+								</div>					
+							</a>
+							<a href="" >
+									<img src="img/a2.png" alt="">
+									<div class="wheel-img">
 										<img src="img/t4.png" alt="">
-									</div>
-									<div class="slider-top t">
 										<img src="img/t5.png" alt="">
 									</div>
-									<div class="slider-nav">
-										<li class="id d"></li>
-										<li class="id"></li>
-										<li class="id"></li>
-										<li class="id"></li>
-										<li class="id"></li>
-										<li class="id"></li>
+							</a>
+							<a href="" >
+									<img src="img/a3.png" alt="">
+									<div class="wheel-img">
+										<img src="img/t4.png" alt="">
+										<img src="img/t5.png" alt="">
 									</div>
-								</div>
-							</div>
-							<ul class="normal-nav">
-								<li class="nav-item l1">
-									<i class="iconfont icon-qunzi"></i>
-									<a href="">女装/</a>
-									<a href="">内衣</a>
-								</li>
-								<li class="nav-item l2">
-									<i class="iconfont icon-nanzhuang"></i>
-									<a href="">男装/</a>
-									<a href="">运动户外</a>
-								</li>
-								<li class="nav-item l2">
-									<i class="iconfont icon-xiezi"></i>
-									<a href="">女鞋/</a>
-									<a href="">男鞋/</a>
-									<a href="">箱包</a>
-								</li>
-								<li class="nav-item l1">
-									<i class="iconfont icon-kouhong"></i>
-									<a href="">美妆/</a>
-									<a href="">个人护理</a>
-								</li>
-								<li class="nav-item l2">
-									<i class="iconfont icon-zuanshi"></i>
-									<a href="">腕表</a>/
-									<a href="">眼镜</a>/
-									<a href="">珠宝饰品</a>
-								</li>
-								<li class="nav-item l2">
-									<i class="iconfont icon-shouji1"></i>
-									<a href="">手机/</a>
-									<a href="">数码/</a>
-									<a href="">电脑办公</a>
-								</li>
-								<li class="nav-item l3">
-									<i class="iconfont icon-yingerche"></i>
-									<a href="">母婴玩具</a>
-									
-								</li>
-								<li class="nav-item l4">
-									<i class="iconfont icon-mian"></i>
-									<a href="">零食/</a>
-									<a href="">茶酒/</a>
-									<a href="">进口食品</a>
-								</li>
-								<li class="nav-item l4">
-									<i class="iconfont icon-lizhi"></i>
-									<a href="">生鲜水店</a>
-									
-								</li>
-								<li class="nav-item l2">
-									<i class="iconfont icon-bingxiang"></i>
-									<a href="">大家电/</a>
-									<a href="">生活电器</a>
-								</li>
-								<li class="nav-item l3">
-									<i class="iconfont icon-jiajujiancai"></i>
-									<a href="">家具建材</a>
-									
-								</li>
-								<li class="nav-item l2">
-									<i class="iconfont icon-fuwu"></i>
-									<a href="">汽车/</a>
-									<a href="">配件/</a>
-									<a href="">用品</a>
-								</li>
-								<li class="nav-item l4">
-									<i class="iconfont icon-jiafang"></i>
-									<a href="">家纺/</a>
-									<a href="">家饰/</a>
-									<a href="">鲜花</a>
-								</li>
-								<li class="nav-item l5">
-									<i class="iconfont icon-medicine"></i>
-									<a href="">医药保健</a>
-								
-								</li>
-								<li class="nav-item l3">
-									<i class="iconfont icon-chuju"></i>
-									<a href="">厨具/</a>
-									<a href="">收纳/</a>
-									<a href="">宠物</a>
-								</li>
-								<li class="nav-item l5">
-									<i class="iconfont icon-bao"></i>
-									<a href="">图书音像</a>
-								</li>
-							</ul> 
+							</a>
+							<a href="" >
+									<img src="img/a4.png" alt="">
+									<div class="wheel-img">
+										<img src="img/t4.png" alt="">
+										<img src="img/t5.png" alt="">
+									</div>
+							</a>
+							<a href="">
+									<img src="img/a5.png" alt="">
+									<div class="wheel-img">
+										<img src="img/t4.png" alt="">
+										<img src="img/t5.png" alt="">
+									</div>
+							</a>
+							<a href="">
+									<img src="img/a6.png" alt="">
+									<div class="wheel-img">
+										<img src="img/t4.png" alt="">
+										<img src="img/t5.png" alt="">
+									</div>
+							</a>
 						</div>
-					</div>
+						<div class="slider-nav">
+								<li class="id active"></li>
+								<li class="id"></li>
+								<li class="id"></li>
+								<li class="id"></li>
+								<li class="id"></li>
+								<li class="id"></li>
+						</div>
+					</div> 				
 				</div>
 			</div>
-			
-			<!-- 38女王节开始 -->
-			<div class="page-list">
+			<div class="category-inner-con">
+				<div class="logo-con">
+					<img src="img/TB.gif" alt="">
+				</div>
+				<ul class="category-tab-nav">
+					<li class="category-tab-nav-item selected">商品分类</li>
+					<li class="category-tab-nav-item meeting-tab">女王节</li>
+				</ul>
+				<ul class="normal-nav">
+						<li class="nav-item l1">
+							<i class="iconfont icon-qunzi"></i>
+							<a href="">女装/</a>
+							<a href="">内衣</a>
+							<div class="bannerList-r">当季流行</div>
+						</li>
+						<li class="nav-item l2">
+							<i class="iconfont icon-nanzhuang"></i>
+							<a href="">男装/</a>
+							<a href="">运动户外</a>
+							<div class="bannerList-r">男士外套</div>
+						</li>
+						<li class="nav-item l2">
+							<i class="iconfont icon-xiezi"></i>
+							<a href="">女鞋/</a>
+							<a href="">男鞋/</a>
+							<a href="">箱包</a>
+							<div class="bannerList-r">箱包</div>
+						</li>
+						<li class="nav-item l1">
+							<i class="iconfont icon-kouhong"></i>
+							<a href="">美妆/</a>
+							<a href="">个人护理</a>
+							<div class="bannerList-r">个人护理</div>
+						</li>
+						<li class="nav-item l2">
+							<i class="iconfont icon-zuanshi"></i>
+							<a href="">腕表</a>/
+							<a href="">眼镜</a>/
+							<a href="">珠宝饰品</a>
+							<div class="bannerList-r">珠宝饰品</div>
+						</li>
+						<li class="nav-item l2">
+							<i class="iconfont icon-shouji1"></i>
+							<a href="">手机/</a>
+							<a href="">数码/</a>
+							<a href="">电脑办公</a>
+							<div class="bannerList-r">电脑办公</div>
+						</li>
+						<li class="nav-item l3">
+							<i class="iconfont icon-yingerche"></i>
+							<a href="">母婴玩具</a>
+							<div class="bannerList-r">母婴玩具</div>
+						</li>
+						<li class="nav-item l4">
+							<i class="iconfont icon-mian"></i>
+							<a href="">零食/</a>
+							<a href="">茶酒/</a>
+							<a href="">进口食品</a>
+							<div class="bannerList-r">进口食品</div>
+						</li>
+						<li class="nav-item l4">
+							<i class="iconfont icon-lizhi"></i>
+							<a href="">生鲜水店</a>
+							<div class="bannerList-r">生鲜水店</div>
+						</li>
+						<li class="nav-item l2">
+							<i class="iconfont icon-bingxiang"></i>
+							<a href="">大家电/</a>
+							<a href="">生活电器</a>
+							<div class="bannerList-r">生活电器</div>
+						</li>
+						<li class="nav-item l3">
+							<i class="iconfont icon-jiajujiancai"></i>
+							<a href="">家具建材</a>
+							<div class="bannerList-r">家具建材</div>
+						</li>
+						<li class="nav-item l2">
+							<i class="iconfont icon-fuwu"></i>
+							<a href="">汽车/</a>
+							<a href="">配件/</a>
+							<a href="">用品</a>
+							<div class="bannerList-r">用品</div>
+						</li>
+						<li class="nav-item l4">
+							<i class="iconfont icon-jiafang"></i>
+							<a href="">家纺/</a>
+							<a href="">家饰/</a>
+							<a href="">鲜花</a>
+							<div class="bannerList-r">鲜花</div>
+						</li>
+						<li class="nav-item l5">
+							<i class="iconfont icon-medicine"></i>
+							<a href="">医药保健</a>
+							<div class="bannerList-r">医药保健</div>
+						</li>
+						<li class="nav-item l3">
+							<i class="iconfont icon-chuju"></i>
+							<a href="">厨具/</a>
+							<a href="">收纳/</a>
+							<a href="">宠物</a>
+							<div class="bannerList-r">宠物</div>
+						</li>
+						<li class="nav-item l5">
+							<i class="iconfont icon-bao"></i>
+							<a href="">图书音像</a>
+							<div class="bannerList-r">图书音像</div>
+						</li>
+					</ul> 
+			</div>
+		</div>
+		
+		<!-- 轮播图结束 -->
+		
+		<!-- 38女王节开始 -->
+		<div class="page-list">
 				<a href="" class="list-top"></a>
 				<div class="group-wrapper">
 					<div class="first-page">
@@ -1795,5 +1893,41 @@
 
 		</div>
 		<!-- 底部结束 -->
+		<!-- 左侧导航开始 -->
+		<aside class="aside-left">
+				<div class="aside-box nav-header">导航</div>
+				<div class="fplift">
+					<div class="aside-box">
+						<div class="nav-name">天猫超市</div>
+					</div>
+					<div class="aside-box">
+						<div class="nav-name">天猫国际</div>
+					</div>
+					<div class="aside-box">
+						<div class="nav-name">美丽人生</div>
+					</div>
+					<div class="aside-box">
+						<div class="nav-name">潮店酷玩</div>
+					</div>
+					<div class="aside-box">
+						<div class="nav-name">居家生活</div>
+					</div>
+					<div class="aside-box">
+						<div class="nav-name">打造爱巢</div>
+					</div>
+					<div class="aside-box">
+						<div class="nav-name">户外出行</div>
+					</div>
+					<div class="aside-box">
+						<div class="nav-name">猜你喜欢</div>
+					</div>
+					<div class="aside-box nav-back">
+						<i class="iconfont">&#xe605;</i>
+						顶部
+					</div>
+				</div>
+			</aside>
+			<!-- 左侧导航结束 -->
+		
 	</body>
 </html>
